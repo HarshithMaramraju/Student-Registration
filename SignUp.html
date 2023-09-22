@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+</head>
+<style>
+	
+	
+	body
+	{
+		margin: 0%;
+		background-image: url(https://media.tenor.com/J7kPFbkrT-gAAAAd/space-planets.gif);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		position: absolute;
+	}
+	
+	header
+		{
+   		 position: absolute;
+   		 top: 50px;
+    	 left: 20px;
+	}
+	.fislog{
+		position: fixed;
+    	top: 50;
+	    right: 50px;
+	    width: 30%;
+	    background-color: transparent;
+	    display: flex;
+	    justify-content: space-around; 
+	    align-items: center;
+	}
+	
+	.fislog a
+	{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+	}
+	
+	.fislog a :hover{
+		text-decoration: underline;
+		color: white;
+	}
+	
+	.fislog button{
+		font-size: 15px;
+		color: white;
+		background: transparent;
+		width: 70px;
+		padding: 15px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.fislog button:hover{
+		background-color: white;
+		border: 1px solid white;
+		border-radius: 5%;
+		color: black;
+	}
+	.elements{
+		text-align: center;
+		margin-top: 10%;
+		width: 30%;
+	 	background-color: transparent;
+		transition: 2s;
+
+	}
+	
+	.elements:hover{
+		border: 2px solid rgba(225, 255, 255, 0.5);
+    	border-radius: 20px;
+		backdrop-filter: blur(10px);
+	}
+	
+	h1{
+		color: white;
+		text-decoration: none;
+		transition: 2s;
+	}
+	h1:hover{
+		text-decoration: underline;	
+	}
+	
+	form{
+		padding: 7px;
+	}
+	label{
+		color: white;
+		font-weight: bold;
+	}
+	
+	input{
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid white;
+		color: white;
+		outline: none;
+	}
+	
+	::placeholder{
+		color: white;
+	}
+
+</style>
+<body>
+	
+	<header>
+		<div class="fislog">
+        	<a href="#">home</a>
+        	<a href="#">contact</a>
+        	<a href="#">about us</a>
+        	<button class="main">login</button>
+    	</div>
+    </header>
+    
+		<center>
+		<div class="elements">
+		<h1>Enter the details as follow </h1>
+		<form method="post" action="registor">
+			<label>Name: </label> <input name="username" type="text" placeholder="enter name" required>
+			<br><br>
+			<label>Email: </label> <input name="useremail" type="email" placeholder="enter email" required>
+			<br><br>
+			<label>Password: </label> <input name="userpassword" type="password" placeholder="enter password" required>
+			<br><br>
+			<label>Phone: </label> <input name="userphone" type="tel" placeholder="enter phone number" required>
+			<br><br>
+			<input name="Terms and conditions" type="checkbox"> <a href="">terms and conditions</a>
+			<br><br>
+			<button <a href="./Login.html">Submit</a></button>
+		</form>
+		</div>
+	</center>
+</body>
+</html>
